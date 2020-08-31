@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./fonts/material-icons.css">
+    <link rel="stylesheet" href="./css/index.css">
+
+    <title>Kanban App</title>
+</head>
+
+<body>
+    <main class="wrapper">
+        <div class="content">
+            <header class="header">
+                <div class="header__left">
+                    <p class="header__logo__title">awesome kanban board</p>
+                </div>
+                <div class="header__center">
+                    <button class="note__control header__button">
+                        <span>create new list</span>
+                        <i class="material-icons">add</i>
+                    </button>
+                </div>
+                <div class="header__right">
+                    <div class="header__avatar">
+                        <img src="./img/avatar.png" class="avatar_img" alt="avatar">
+                    </div>
+                    <i class="material-icons icon__avatar" onclick="openProfile(this)">expand_more</i>
+                    <div class="header__profile">
+                        <nav class="list__profile">
+                            <ul>
+                                <li class="item__profile">Profile</li>
+                                <li class="item__profile">Log Out</li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </header>
+            
+            <section class="kanban__tasks">
+               
+                
+            </section>
+        </div>
+        <footer class="footer">
+            <div class="footer__left">
+                <div class="active__task">
+                    <p class="active__name__text">Active tasks: </p><span class="active__num">
+                        <>
+                    </span>
+                </div>
+                <div class="finished__task">
+                    <p class="finihsed__name__text">Finished tasks: </p><span class="finished__num">
+                        <>
+                    </span>
+                </div>
+            </div>
+            <div class="footer__right">
+                <p class="kanban__board__name">Kanban board </p><span> EPAM </span><span>2020</span>
+            </div>
+        </footer>
+    </main>
+    <section class="modal">
+        
+    </section>
+    <script src="./utils/count-tasks-method.js"></script>
+    <script src="./utils/render.js"></script>
+    <script src="./mvc/model.js"></script>
+    <script src="./utils/local-storage.js"></script>
+    <script src="./mvc/controller.js"></script>
+    <script src="./mvc/view.js"></script>
+    <script src="./utils/drag-and-drop.js"></script>
+</body>
+
+</html>
